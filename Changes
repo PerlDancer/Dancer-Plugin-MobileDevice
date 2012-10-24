@@ -1,6 +1,6 @@
 Revision history for Dancer-Plugin-MobileDevice
 
-0.04    2012-10-24
+{{$NEXT}}
         * Make the plugin Dancer 2-ready.
 
 0.03    2011-04-10
