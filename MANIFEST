@@ -8,7 +8,6 @@ t/00-load.t
 t/01-is-mobile-device.t
 t/02-tokens.t
 t/03-dynamic-layout.t
-t/boilerplate.t
 t/logs/development.log
 t/manifest.t
 t/pod-coverage.t
