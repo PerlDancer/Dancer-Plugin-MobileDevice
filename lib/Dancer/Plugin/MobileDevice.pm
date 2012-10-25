@@ -1,8 +1,8 @@
 package Dancer::Plugin::MobileDevice;
+#ABSTRACT: make a Dancer app mobile-aware
 
 use strict;
 use warnings;
-our $VERSION = '0.04';
 
 use Dancer ':syntax';
 use Dancer::Plugin;
@@ -43,10 +43,6 @@ register_plugin for_versions => [ 1, 2 ];
 
 1;
 __END__
-
-=head1 NAME
-
-Dancer::Plugin::MobileDevice - make a Dancer app mobile-aware
 
 =head1 SYNOPSIS
 
@@ -93,14 +89,10 @@ You can of course still override this layout by supplying a layout option to the
 C<template> call in the usual way (see the L<Dancer> documentation for how to do
 this).
 
-=head1 AUTHOR
-
-Alexis Sukrieh, C<< <sukria at sukria.net> >>
-
 =head1 BUGS
 
 Please report any bugs or feature requests to
-L<http://github.com/sukria/Dancer-Plugin-MobileDevice/issues>
+L<http://github.com/PerlDancer/Dancer-Plugin-MobileDevice/issues>
 
 =head1 SUPPORT
 
@@ -136,15 +128,5 @@ L<http://search.cpan.org/dist/Dancer-Plugin-MobileDevice/>
 
 This plugin was initially written for an article of the Dancer advent
 calendar 2010.
-
-=head1 LICENSE AND COPYRIGHT
-
-Copyright 2010-2011 Alexis Sukrieh.
-
-This program is free software; you can redistribute it and/or modify it
-under the terms of either: the GNU General Public License as published
-by the Free Software Foundation; or the Artistic License.
-
-See http://dev.perl.org/licenses/ for more information.
 
 =cut
