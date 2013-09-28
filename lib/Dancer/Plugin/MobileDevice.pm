@@ -105,10 +105,6 @@ You can also look for information at:
 
 =over 4
 
-=item * RT: CPAN's request tracker
-
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Dancer-Plugin-MobileDevice>
-
 =item * AnnoCPAN: Annotated CPAN documentation
 
 L<http://annocpan.org/dist/Dancer-Plugin-MobileDevice>

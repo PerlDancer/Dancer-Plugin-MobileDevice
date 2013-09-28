@@ -47,7 +47,7 @@ AUTHOR
 
 BUGS
     Please report any bugs or feature requests to
-    http://github.com/sukria/Dancer-Plugin-MobileDevice/issues
+    http://github.com/perldancer/Dancer-Plugin-MobileDevice/issues
 
 SUPPORT
     You can find documentation for this module with the perldoc command.
@@ -55,9 +55,6 @@ SUPPORT
         perldoc Dancer::Plugin::MobileDevice
 
     You can also look for information at:
-
-    * RT: CPAN's request tracker
-        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Dancer-Plugin-MobileDevice
 
     * AnnoCPAN: Annotated CPAN documentation
         http://annocpan.org/dist/Dancer-Plugin-MobileDevice
