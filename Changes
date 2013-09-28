@@ -1,6 +1,9 @@
 Revision history for Dancer-Plugin-MobileDevice
 
-{{$NEXT}}
+0.05    2013-09-28
+        * Fix links to the bug tracker. (RT#89016)
+
+0.04   2012-11-25
         * Make the plugin Dancer 2-ready.
 
 0.03    2011-04-10
