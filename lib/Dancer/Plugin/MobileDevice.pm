@@ -8,30 +8,24 @@ use Dancer ':syntax';
 use Dancer::Plugin;
 
 register 'is_mobile_device' => sub {
-    return request->user_agent =~
-        /(?:iP(?:ad|od|hone)|Android|BlackBerry|Mobile|Palm)/
-      ? 1 : 0;
+    return request->user_agent 
+        =~ /(?:iP(?:ad|od|hone)|Android|BlackBerry|Mobile|Palm)/ || 0 ;
 };
 
 hook before => sub {
     # If we don't have a mobile layout declared, do nothing.
-    my $settings = plugin_setting || {};
+    my $mobile_layout = plugin_setting->{mobile_layout}
+        and is_mobile_device()
+        or return;
 
-    if (my $mobile_layout = $settings->{mobile_layout}) {
-        # OK, remember the original layout setting (so we can restore it
-        # after the request), and override it with the specified mobile layout.
-        if (is_mobile_device()) {
-            var orig_layout => setting('layout');
-            setting layout => $mobile_layout;
-        }
-    }
+    var orig_layout => setting('layout');
+    setting layout => $mobile_layout;
 };
 
 hook after => sub {
-    my $settings = plugin_setting || {};
-    if ( $settings->{mobile_layout} && is_mobile_device() ) {
-        setting layout => delete vars->{orig_layout};
-    }
+    setting layout => delete vars->{orig_layout}
+        if plugin_setting->{mobile_layout}
+        and is_mobile_device();
 };
 
 hook before_template => sub {
@@ -39,7 +33,7 @@ hook before_template => sub {
     $tokens->{'is_mobile_device'} = is_mobile_device();
 };
 
-register_plugin for_versions => [ 1, 2 ];
+register_plugin;
 
 1;
 __END__
