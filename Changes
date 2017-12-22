@@ -1,33 +1,46 @@
 Revision history for Dancer-Plugin-MobileDevice
 
 {{$NEXT}}
-    [IMPROVEMENTS]
-    * minor refactoring
-    * silence spurious warnings when the user agent is undefined (GH#3)
+  [ API CHANGES ]
 
-0.05    2013-09-28
-        * Fix links to the bug tracker. (RT#89016)
+  [ BUG FIXES ]
 
-0.04   2012-11-25
-        * Make the plugin Dancer 2-ready.
+  [ DOCUMENTATION ]
 
-0.03    2011-04-10
-        [ Alberto Sim√µes ]
-        * Fix access to setting on a test
-		* Add support to iPad/iPod
+  [ ENHANCEMENTS ]
 
-0.02	2010-12-13, Alexis Sukrieh
-		[ Franck Cuny ]
-		* Fix failing tests under Win32 environments
+  [ NEW FEATURES ]
 
-		[ David Precious ]
-		* Make mobile layout configurable. 
-		* Massive update of the documentation (POD and README)
+  [ STATISTICS ]
 
-		[ Alexis Sukrieh ]
-		* Add a dependency to Dancer in Makefile.PL
-		  (FIX RT issue #63844)
+0.06 2017-12-22
+  [ IMPROVEMENTS ]
+    - minor refactoring
+    - silence spurious warnings when the user agent is undefined (GH#3)
 
-0.01    2010-12-03, Alexis Sukrieh
-        First version, released for the Perl Dancer Advent Calendar 2010
+  [ STATISTICS ]
+    - code churn: 9 files changed, 40 insertions(+), 82 deletions(-)
 
+0.05 2013-09-28
+  - Fix links to the bug tracker. (RT#89016)
+
+0.04 2012-11-25
+  - Make the plugin Dancer 2-ready.
+
+0.03 2011-04-10
+  [ Alberto Simıes ]
+    - Fix access to setting on a test * Add support to iPad/iPod
+
+0.02 2010-12-13 , Alexis Sukrieh
+  [ Alexis Sukrieh ]
+    - Add a dependency to Dancer in Makefile.PL (FIX RT issue #63844)
+
+  [ David Precious ]
+    - Make mobile layout configurable. 
+    - Massive update of the documentation (POD and README)
+
+  [ Franck Cuny ]
+    - Fix failing tests under Win32 environments
+
+0.01 2010-12-03 , Alexis Sukrieh
+  - First version, released for the Perl Dancer Advent Calendar 2010
