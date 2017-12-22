@@ -1,6 +1,6 @@
 package Dancer::Plugin::MobileDevice;
 #ABSTRACT: make a Dancer app mobile-aware
-
+$Dancer::Plugin::MobileDevice::VERSION = '0.04';
 use strict;
 use warnings;
 
@@ -42,7 +42,20 @@ hook before_template => sub {
 register_plugin for_versions => [ 1, 2 ];
 
 1;
+
 __END__
+
+=pod
+
+=encoding UTF-8
+
+=head1 NAME
+
+Dancer::Plugin::MobileDevice - make a Dancer app mobile-aware
+
+=head1 VERSION
+
+version 0.04
 
 =head1 SYNOPSIS
 
@@ -100,7 +113,6 @@ You can find documentation for this module with the perldoc command.
 
     perldoc Dancer::Plugin::MobileDevice
 
-
 You can also look for information at:
 
 =over 4
@@ -123,10 +135,20 @@ L<http://search.cpan.org/dist/Dancer-Plugin-MobileDevice/>
 
 =back
 
-
 =head1 ACKNOWLEDGEMENTS
 
 This plugin was initially written for an article of the Dancer advent
 calendar 2010.
+
+=head1 AUTHOR
+
+Dancer Core Developers
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2010 by Alexis Sukrieh.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
