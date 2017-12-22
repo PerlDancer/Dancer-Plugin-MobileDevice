@@ -1,5 +1,10 @@
 Revision history for Dancer-Plugin-MobileDevice
 
+{{$NEXT}}
+    [IMPROVEMENTS]
+    * minor refactoring
+    * silence spurious warnings when the user agent is undefined (GH#3)
+
 0.05    2013-09-28
         * Fix links to the bug tracker. (RT#89016)
 
