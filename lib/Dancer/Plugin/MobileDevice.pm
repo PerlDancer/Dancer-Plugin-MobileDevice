@@ -8,6 +8,7 @@ use Dancer ':syntax';
 use Dancer::Plugin;
 
 register 'is_mobile_device' => sub {
+    no warnings 'uninitialized';
     return request->user_agent 
         =~ /(?:iP(?:ad|od|hone)|Android|BlackBerry|Mobile|Palm)/ || 0 ;
 };
