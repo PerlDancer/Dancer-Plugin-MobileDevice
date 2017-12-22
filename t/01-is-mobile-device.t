@@ -19,10 +19,8 @@ plan tests => scalar(@mobile_devices) + 1;
 use Dancer::Test;
 
 for my $md (@mobile_devices) {
-    $ENV{HTTP_USER_AGENT} = $md; # for Dancer 1.x
-    my $resp = dancer_response GET => '/', 
-        undef, 
-        { HTTP_USER_AGENT => $md };  # for Dancer 2.x
+    $ENV{HTTP_USER_AGENT} = $md;
+    my $resp = dancer_response GET => '/'; 
 
     my $content = $resp->{content};
 
@@ -30,9 +28,7 @@ for my $md (@mobile_devices) {
 }
 
 $ENV{HTTP_USER_AGENT} = 'Mozilla';
-    my $resp = dancer_response GET => '/', 
-        undef, 
-        { HTTP_USER_AGENT => 'Mozilla' };  # for Dancer 2.x
+    my $resp = dancer_response GET => '/'; 
 
 my $content = $resp->{content};
 
